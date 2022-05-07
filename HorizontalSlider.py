@@ -51,5 +51,5 @@ class TestHorizontalSlider(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main(
-        defaultTest="test_horizontal_slider_arrow_up"
+        # defaultTest="test_horizontal_slider_arrow_up"
     )
