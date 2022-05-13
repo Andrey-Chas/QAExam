@@ -22,6 +22,7 @@ class TestDropDownList(unittest.TestCase):
     def test_drop_down_list(self):
         driver = self.driver
         self.assertIn(self.base_url, driver.current_url)
+        self.assertIn(driver.title, "The Internet")
         drop_down = driver.find_element(By.CSS_SELECTOR, "#dropdown")
         self.assertTrue(drop_down)
         text = driver.find_element(By.CSS_SELECTOR, "#dropdown > option:nth-child(1)")
